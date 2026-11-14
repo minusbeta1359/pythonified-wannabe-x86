@@ -1,4 +1,5 @@
-data = "MOV DSK.FLOPPY 1 3 ; MOV DTX DSK.FLOPPY 1 3 ; "
+
+data = "MOV DTX 10 ; MOV RAM 0 DTX ; STDOUT RAM 0 ; ADD DTX 5 ; MOV RAM 1 DTX ; STDOUT RAM 1 ; ADD DTX 5 ; MOV RAM 2 DTX ; STDOUT RAM 2 ; "
 xolo = data.split()
 
 #DOCUMENTATION
@@ -134,6 +135,7 @@ def interpret(xolo):
                 else:
                     RAM[slot] = int(i)
                     print("Int to RAM")
+                inter_main = 0
                 continue
             if inter_main == 3 and cmd == 331: #FLOPPY alloc
                 if i == "DTX":
@@ -154,4 +156,3 @@ def interpret(xolo):
 
 interpret(xolo)
 input("Press enter to exit")
-
