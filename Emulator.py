@@ -1,4 +1,3 @@
-
 data = "MOV DSK.FLOPPY 1 3 ; MOV DTX DSK.FLOPPY 1 3 ; "
 xolo = data.split()
 
@@ -118,6 +117,7 @@ def interpret(xolo):
                 slot = int(i)
                 inter_main = 3
                 cmd = 331 #reserved for floppy
+                continue
             if inter_main == 2 and cmd == 2 and payload == 2: #stdout slot alloc
                 print(i)
                 print("--------------- stdout confirm")
@@ -134,6 +134,7 @@ def interpret(xolo):
                 else:
                     RAM[slot] = int(i)
                     print("Int to RAM")
+                continue
             if inter_main == 3 and cmd == 331: #FLOPPY alloc
                 if i == "DTX":
                     FLOPPY[slot] = int(DTX)
