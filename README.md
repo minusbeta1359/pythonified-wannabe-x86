@@ -1,5 +1,8 @@
 # pythonified-wannabe-x86: when the python said he wanted to be 86 times greater than C but failed
 
+# WARNING: this ain't no programming language this is smth made for fun
+
+
 # How 2 Operate:
 * STEP -1: it is an virtual interpreter it will not run anything low level in ur computer
 * STEP 0: Install python (it is coded in python 3.13)
