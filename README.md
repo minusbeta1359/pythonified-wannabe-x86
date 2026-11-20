@@ -1,10 +1,10 @@
 # SomethingThatEmulatesForFun
 
-how to feel pain without having to feel it
+# Description
+I was bored so i made this for fun, its like assembly x86 but it has no jmp nor cmp, i wonder what can you do with this.
 
-as u can see this is my first try to make a whats known as an programming language emulator, interpreted ram and interpreted non volatile memory, this doesnt have functions nor if's because im too lazy 2 do it, but its fun for me lol
+# Progress
 
-
-Language: may be done imma try smth w it
+Language: Done but not for comfort
 FLOPPY (1.44 kib) : DONE!!!!
 
